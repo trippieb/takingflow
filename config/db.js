@@ -4,7 +4,7 @@ const db = config.get("mongoURI");
 
 const connectDB = async () => {
   try {
-    await mongoose.connect(db,"mongodb+srv://Heal:8onX1VOZNwAIoXip@cluster0.hjewe.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" {
+    await mongoose.connect(db, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
